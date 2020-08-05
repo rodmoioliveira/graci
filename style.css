@@ -1,13 +1,17 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
 #app {
-	display: flex;
-	align-items: center;
-	height: 95vh;
+  display: flex;
+  align-items: center;
+  height: 95vh;
 }
 
 .text {
-	font-size: 6vw;
+  font-size: 6vw;
 }
 
 .paragraph {
-	margin: 0 10px;
+  margin: 0 2rem;
 }
