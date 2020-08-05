@@ -1,0 +1,13 @@
+#app {
+	display: flex;
+	align-items: center;
+	height: 95vh;
+}
+
+.text {
+	font-size: 6vw;
+}
+
+.paragraph {
+	margin: 0 10px;
+}
