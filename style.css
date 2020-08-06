@@ -10,8 +10,19 @@
 
 .text {
   font-size: 6vw;
+  font-weight: 300;
+}
+
+#quality {
+  font-weight: 900;
 }
 
 .paragraph {
-  margin: 0 2rem;
+  margin: 0 1rem;
+}
+
+@media (max-width: 550px) {
+  .text {
+    font-size: 8vw;
+  }
 }
