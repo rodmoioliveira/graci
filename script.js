@@ -4,7 +4,14 @@ const {
   operators: { filter },
 } = rxjs;
 
-const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const random = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1)) + min;
+
+const linearMap = (in_min, in_max, out_min, out_max) => (num) =>
+  Math.floor(
+    ((num - in_min) * (out_max - out_min)) / (in_max - in_min) +
+      out_min
+  );
 
 const quotes = [
   'linda',
@@ -20,16 +27,18 @@ const quotes = [
   'especial',
   'viciada em biscoitos',
 ];
+const images = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+const mapQuotesImages = linearMap(0, quotes.length, 0, images.length);
 const initialState = quotes.map((_, i) => i);
 let idx = [...initialState];
 let shuffle = true;
 const qDom = document.getElementById('quotes');
+const iDom = document.getElementById('images');
 const toogleShuffle = () => {
   shuffle = !shuffle;
 };
 
 const handle = () => {
-  console.log(idx);
   if (!idx.length) {
     idx = [...initialState];
   }
@@ -38,7 +47,9 @@ const handle = () => {
   idx = [...idx.slice(0, i), ...idx.slice(i + 1)];
 
   const q = quotes[int];
+  const img = `./images/${mapQuotesImages(int)}.jpg`;
   qDom.innerHTML = `${q}!`;
+  iDom.src = img;
 };
 
 const interaction = () => {

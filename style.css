@@ -17,6 +17,11 @@
   font-weight: 900;
 }
 
+#images {
+  height: 15vw;
+  width: 15vw;
+}
+
 .paragraph {
   margin: 0 1rem;
 }
