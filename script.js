@@ -53,7 +53,7 @@ const handle = () => {
 };
 
 const interaction = () => {
-  interval(300)
+  interval(400)
     .pipe(filter(() => shuffle))
     .subscribe(handle);
   fromEvent(document, 'click').subscribe(toogleShuffle);

@@ -4,13 +4,14 @@
 
 #app {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   height: 95vh;
 }
 
-.text {
+.paragraph {
   font-size: 6vw;
   font-weight: 300;
+  margin: 0 0 0 1rem;
 }
 
 #quotes {
@@ -18,16 +19,18 @@
 }
 
 #images {
-  height: 15vw;
-  width: 15vw;
+  height: 20vw;
+  width: 20vw;
+  margin: 1rem;
 }
 
-.paragraph {
-  margin: 0 1rem;
-}
+@media (max-width: 980px) {
+  .paragraph {
+    font-size: 10vw;
+  }
 
-@media (max-width: 550px) {
-  .text {
-    font-size: 8vw;
+  #images {
+    height: 45vw;
+    width: 45vw;
   }
 }
