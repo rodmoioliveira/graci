@@ -7,20 +7,6 @@ const {
 const random = (min, max) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
 
-const liner_map = (in_min, in_max, out_min, out_max) => (num) =>
-  Math.floor(
-    ((num - in_min) * (out_max - out_min)) / (in_max - in_min) +
-      out_min
-  );
-
-const allImages = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-const mapQuotesImages = liner_map(
-  0,
-  quotes_yo_soy.length,
-  0,
-  allImages.length
-);
-
 const [init_st_soy, init_st_ser, init_st_images] = [
   quotes_yo_soy,
   quotes_quiero_ser,
