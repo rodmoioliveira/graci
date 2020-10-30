@@ -10,7 +10,7 @@ const quotes_yo_soy = [
   'una persona soñadora y decidida, busco mis sueños.',
   'una persona imperfecta que intenta mejorar cada vez más, soy muy afortunada y me gusta salir con los amigos, pasar el tiempo con mi familia y jugar al baloncesto.',
   'una persona solidaria y me gusta divertirme con mis amigos.',
-  'una persona muy estudiosa, mis asignaturas favoritas son Matemáticas, Química, Física y ESPAÑOL.',
+  'una persona muy estudiosa, mis asignaturas favoritas son Matemáticas, Química, Física y Español.',
   'una persona muy vivaz, pero guardo muchas cosas para mí.',
   'una persona que es pura emoción, me encanta hablar, comunicarme con los demás y animar a los que están a mi lado me hace muy bien.',
   'una persona muy sentimental, decidida y empática.',

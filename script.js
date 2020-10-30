@@ -55,8 +55,8 @@ const handle = () => {
   const int_ser = get_index(idx_ser, init_st_ser);
   const int_images = get_index(idx_images, init_st_images);
 
-  dom_soy.innerHTML = `${quotes_yo_soy[int_soy]}`;
-  dom_ser.innerHTML = `${quotes_quiero_ser[int_ser]}`;
+  dom_soy.innerText = `${quotes_yo_soy[int_soy]}`;
+  dom_ser.innerText = `${quotes_quiero_ser[int_ser]}`;
   dom_images.src = `./images/${quotes_images[int_images]}`;
 };
 
