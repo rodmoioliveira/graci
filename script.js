@@ -42,11 +42,11 @@ const toogleShuffle = () => {
 
 const get_index = (idx, initial_state) => {
   if (!idx.length) {
-    idx = [...initial_state];
+    idx.splice(0, 0, ...initial_state);
   }
   const i = random(0, idx.length - 1);
   const int = idx[i];
-  idx = [...idx.slice(0, i), ...idx.slice(i + 1)];
+  idx.splice(i, 1);
   return int;
 };
 
