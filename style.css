@@ -60,15 +60,20 @@
 }
 
 @media (max-width: 980px) {
-  .about,
+  .about {
+    font-size: 1.5rem;
+  }
+  .work {
+    font-size: 1.2rem;
+  }
   .paragraph {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   #quotes {
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
   }
 
   #images {
