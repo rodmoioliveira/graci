@@ -64,4 +64,6 @@ const quotes_images = [
   '19.jpeg',
   '20.jpeg',
   '21.jpg',
+  '22.jpeg',
+  '23.jpeg',
 ];

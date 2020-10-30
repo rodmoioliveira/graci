@@ -1,9 +1,19 @@
+:root {
+  --primary-color: #028340;
+  --secondary-color: #f7a764;
+  --alternative-color: #f7a;
+}
+
 * {
   color: #111;
   /* outline: 1px dashed #222; */
 }
 
-.about,
+.title {
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+}
+
 .work {
   font-weight: 300;
   font-family: 'Lato', sans-serif;
@@ -17,9 +27,10 @@
   padding-right: 1rem;
 }
 
-.about {
+.title {
   font-size: 2.5vw;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .work {
@@ -35,14 +46,54 @@
 }
 
 .strip--primary {
-  background-color: #028340;
+  background-color: var(--primary-color);
 }
+
 .strip--secondary {
-  background-color: #f7a764;
+  background-color: var(--secondary-color);
+}
+
+.strip--alternative {
+  background-color: var(--alternative-color);
+}
+
+.about {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  max-width: 75rem;
+  margin: 2rem auto;
+  justify-content: space-between;
+}
+
+.about--spanish {
+  background-color: var(--primary-color);
+}
+
+.about--spanish p {
+  color: white !important;
+}
+
+.about--portuguese {
+  background-color: var(--secondary-color);
+}
+
+article {
+  flex: 0 0 46%;
+  padding: 1rem;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+article p {
+  margin-top: 0;
+}
+
+article p:last-child {
+  margin-bottom: 0;
 }
 
 #quotes {
-  max-width: 70rem;
+  max-width: 75rem;
   min-height: 75vh;
   margin: 3rem auto;
   display: flex;
@@ -57,10 +108,11 @@
   width: 100%;
   margin: auto;
   display: block;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 980px) {
-  .about {
+  .title {
     font-size: 1.5rem;
   }
   .work {
@@ -78,5 +130,14 @@
 
   #images {
     margin-top: 2rem;
+  }
+
+  .about {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  article {
+    margin-bottom: 1rem;
   }
 }
