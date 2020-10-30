@@ -1,18 +1,29 @@
 * {
-  font-family: 'Lato', sans-serif;
   color: #111;
   /* outline: 1px dashed #222; */
 }
 
+.about,
+.work {
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+}
+
+.paragraph {
+  font-family: 'Merriweather', serif;
+  font-size: 2vw;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 1rem;
+}
+
 .about {
   font-size: 2.5vw;
-  font-weight: 500;
   text-align: center;
 }
 
 .work {
   font-size: 1.5rem;
-  font-weight: 300;
   text-align: center;
 }
 
@@ -36,18 +47,6 @@
   margin: 3rem auto;
   display: flex;
   justify-content: flex-start;
-}
-
-.paragraph {
-  font-size: 2.5vw;
-  font-weight: 300;
-  margin: 0;
-  padding-right: 1rem;
-}
-
-#ser,
-#soy {
-  font-weight: 300;
 }
 
 .img-container {
