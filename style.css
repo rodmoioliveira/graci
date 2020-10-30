@@ -19,9 +19,15 @@
 .strip {
   height: 0.5rem;
   width: 5rem;
-  background-color: purple;
   display: block;
   margin: auto;
+}
+
+.strip--primary {
+  background-color: #028340;
+}
+.strip--secondary {
+  background-color: #f7a764;
 }
 
 #quotes {
