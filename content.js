@@ -41,3 +41,27 @@ const quotes_quiero_ser = [
   'y mantener todos los lazos que construí durante mi vida y convertirme en un buen profesional en el área que elija.',
   'economista y ser feliz en mi profesión.',
 ];
+
+const quotes_images = [
+  '0.jpg',
+  '1.jpeg',
+  '2.png',
+  '4.jpg',
+  '5.jpg',
+  '6.jpeg',
+  '7.jpeg',
+  '8.jpeg',
+  '9.png',
+  '10.jpeg',
+  '11.jpg',
+  '12.png',
+  '13.jpg',
+  '14.png',
+  '15.jpeg',
+  '16.jpeg',
+  '17.jpeg',
+  '18.jpeg',
+  '19.jpeg',
+  '20.jpeg',
+  '21.jpg',
+];

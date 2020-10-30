@@ -21,12 +21,17 @@ const mapQuotesImages = liner_map(
   allImages.length
 );
 
-const [init_st_soy, init_st_ser] = [
+const [init_st_soy, init_st_ser, init_st_images] = [
   quotes_yo_soy,
   quotes_quiero_ser,
+  quotes_images,
 ].map((arr) => arr.map((_, i) => i));
 
-let [idx] = [[...init_st_soy], [...init_st_ser]];
+let [idx_soy, idx_ser, idx_images] = [
+  [...init_st_soy],
+  [...init_st_ser],
+  [...init_st_images],
+];
 let shuffle = true;
 const dom_soy = document.getElementById('soy');
 const dom_ser = document.getElementById('ser');
@@ -35,9 +40,9 @@ const toogleShuffle = () => {
   shuffle = !shuffle;
 };
 
-const aa = () => {
+const get_index = (idx, initial_state) => {
   if (!idx.length) {
-    idx = [...init_st_soy];
+    idx = [...initial_state];
   }
   const i = random(0, idx.length - 1);
   const int = idx[i];
@@ -46,12 +51,13 @@ const aa = () => {
 };
 
 const handle = () => {
-  const int = aa();
+  const int_soy = get_index(idx_soy, init_st_soy);
+  const int_ser = get_index(idx_ser, init_st_ser);
+  const int_images = get_index(idx_images, init_st_images);
 
-  const q = quotes_yo_soy[int];
-  const img = `./images/${mapQuotesImages(int)}.jpg`;
-  dom_soy.innerHTML = `${q}`;
-  dom_images.src = img;
+  dom_soy.innerHTML = `${quotes_yo_soy[int_soy]}`;
+  dom_ser.innerHTML = `${quotes_quiero_ser[int_ser]}`;
+  dom_images.src = `./images/${quotes_images[int_images]}`;
 };
 
 const interaction = () => {
